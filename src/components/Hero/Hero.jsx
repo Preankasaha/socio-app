@@ -42,7 +42,7 @@ function Hero() {
   return (
     <div className="w-full md:w-1/2 md:mx-auto px-2 md:px-0 mt-8">
       <div className="mb-4">
-        <h2 className="text-2xl font-semibold dark:text-white">Add Post</h2>
+        <h2 className="text-2xl font-semibold">Add Post</h2>
       </div>
       <div>
         <form onSubmit={handleSubmit} className="space-y-2">
