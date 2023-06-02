@@ -1,11 +1,11 @@
 import Hero from 'components/Hero/Hero';
-import PopularPosts from 'components/popularPosts/PopularPosts';
+import Popular from 'components/popularPosts/Popular';
 
 function Home() {
   return (
     <div>
       <Hero />
-      <PopularPosts />
+      <Popular />
     </div>
   );
 }

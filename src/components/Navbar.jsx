@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
@@ -7,49 +8,49 @@ function Navbar() {
   const menus = (
     <>
       <li role="none" className="flex items-stretch">
-        <a
+        <Link
           role="menuitem"
           aria-haspopup="false"
           tabIndex="0"
           className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-indigo-500 focus:outline-none focus-visible:outline-none lg:px-4"
-          href="/about"
+          to="/about"
         >
           <span>About</span>
-        </a>
+        </Link>
       </li>
       <li role="none" className="flex items-stretch">
-        <a
+        <Link
           role="menuitem"
           aria-current="page"
           aria-haspopup="false"
           tabIndex="0"
           className="flex items-center gap-2 py-4 text-indigo-500 transition-colors duration-300 focus:outline-none focus-visible:outline-none lg:px-4"
-          href="/Message"
+          to="/message"
         >
           <span>Message</span>
-        </a>
+        </Link>
       </li>
       <li role="none" className="flex items-stretch">
-        <a
+        <Link
           role="menuitem"
           aria-haspopup="false"
           tabIndex="0"
           className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-indigo-500 focus:outline-none focus-visible:outline-none lg:px-4"
-          href="/media"
+          to="/media"
         >
           <span>Media</span>
-        </a>
+        </Link>
       </li>
       <li role="none" className="flex items-stretch">
-        <a
+        <Link
           role="menuitem"
           aria-haspopup="false"
           tabIndex="0"
           className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-indigo-500 focus:outline-none focus-visible:outline-none lg:px-4"
-          href="/details"
+          to="/details"
         >
           <span>Details</span>
-        </a>
+        </Link>
       </li>
       <li role="none" className="flex items-stretch">
         <div className="me-auto flex items-center md:px-6 lg:ml-0 lg:p-0">
@@ -86,7 +87,7 @@ function Navbar() {
               aria-current="page"
               className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
             >
-              <a href="/" className="font-bold text-indigo-500">SociApp</a>
+              <Link to="/" className="font-bold text-indigo-500">SocioApp</Link>
             </div>
             {/*      <!-- Mobile trigger --> */}
             <button

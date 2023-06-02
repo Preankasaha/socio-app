@@ -36,14 +36,6 @@ function MediaPost({ post }) {
             </svg>
           </button>
         </div>
-        {/* <a
-          href="/"
-          aria-label="Category"
-          title="Visit the East"
-          className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
-        >
-          Visit the East
-        </a> */}
         <p className="mb-2 text-gray-700">
           {description.slice(0, 100)}
         </p>

@@ -1,1 +1,1 @@
-# reduxjs-template-react-vite
+# Socio App
